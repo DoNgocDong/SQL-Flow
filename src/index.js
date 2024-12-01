@@ -7,8 +7,6 @@ const port = config.port;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-console.log()
-
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
 });
