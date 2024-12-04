@@ -7,13 +7,10 @@ const port = config.port;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(__dirname + '/public'))
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(router);
-
-app.get('/', (req, res) => {
-  res.render('index');
-})
 
 app.listen(port, () => {
   console.log(`App running on port ${port}`);

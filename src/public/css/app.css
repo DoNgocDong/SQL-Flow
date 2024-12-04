@@ -1,0 +1,31 @@
+html, 
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#sqlText {
+  border: 1px solid #000;
+  height: 100%;
+}
+
+#flow-layout {
+  text-align: center;
+}
+
+.sql-action {
+  border-bottom: 1px solid #000;
+  height: 7%;
+}
+
+div.CodeMirror {
+  font-family: Consolas, Menlo, Monaco, serif;
+  height: 93%;
+  line-height: 20px;
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+      max-height: 1900px !important;
+  }
+}
