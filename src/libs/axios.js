@@ -19,15 +19,9 @@ const request = () => {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
   }
 
-  const baseData = {
-    userId: String(config.uid),
-    dbvendor: 'dbvmysql'
-  }
-
   return axios.create({
     baseURL: 'https://api.gudusoft.com/gspLive_backend',
     headers: baseHeaders,
-    data: baseData
   });
 }
 

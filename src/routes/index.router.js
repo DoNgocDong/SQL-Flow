@@ -1,24 +1,9 @@
 const { Router } = require('express');
-const request = require('../libs/axios');
+const controller = require('../controller/index.controller');
 
 const router = Router();
 
-router.get('/', (req, res) => {
-  res.render('index');
-})
-
-router.post('/visualize', async (req, res) => {
-  const { sqlText } = req.body;
-  try {
-    const response = await request().post('/sqlflow/generation/sqlflow/graph', {
-      sqltext: sqlText 
-    });
-
-    res.status(200).send(response.data);
-  } catch (err) {
-    res.status(400).send(err)
-  }
-
-});
+router.get('/', controller.getHome);
+router.post('/visualize', controller.visualize);
 
 module.exports = router;

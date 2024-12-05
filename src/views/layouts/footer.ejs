@@ -1,11 +1,12 @@
   </div>
 
   <script>
-    CodeMirror.fromTextArea(document.getElementById("sqlInput"), {
+    const editor = CodeMirror.fromTextArea(document.getElementById("sqlInput"), {
       mode: "text/x-sql",
       lineNumbers: true, 
       matchBrackets: true,
     });
   </script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
