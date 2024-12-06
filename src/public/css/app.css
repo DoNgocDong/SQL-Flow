@@ -24,6 +24,27 @@ div.CodeMirror {
   line-height: 20px;
 }
 
+.table {
+  position: relative;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+.table .label {
+  font-weight: bold;
+  border: 2px solid;
+  margin-bottom: 5px;
+}
+.table .column {
+  margin: 2px 0;
+}
+.line {
+  position: relative;
+  background-color: #999;
+  z-index: 0;
+}
+
 @media (min-width: 1400px) {
   .wrapper {
       max-height: 1900px !important;
