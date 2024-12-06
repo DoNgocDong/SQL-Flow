@@ -83,6 +83,7 @@
   }
 
   document.getElementById('visualize').addEventListener('click', async () => {
+    document.getElementById("table-flow").innerHTML = "";
     const sqlText = editor.getValue();
     
     try {
